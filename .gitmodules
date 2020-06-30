@@ -1,0 +1,3 @@
+[submodule "vuecli"]
+	path = vuecli
+	url = https://github.com/danny17495/vuecli.git
