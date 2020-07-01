@@ -2,14 +2,6 @@
   <div id="app">
     <img src="./assets/logo.png">
     <HelloWorld/>
-    <h1>這是ＡＰＰ的Ｈ１</h1>
-    <div class="card" style="width: 18rem;">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
   </div>
 </template>
 
@@ -30,6 +22,13 @@ export default {
 }
 </script>
 
-<style lang="scss">
-@import "~bootstrap/scss/bootstrap";
+<style>
+#app{
+  font-family: 'Avenir';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
