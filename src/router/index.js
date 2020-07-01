@@ -12,7 +12,7 @@ export default new VueRouter({
         {
             name: '首頁', // 元件呈現的名稱
             path: '/index', //對應虛擬路徑
-            components: Home, //對應元件
+            component: Home, //對應元件
         }
     ]
 })
