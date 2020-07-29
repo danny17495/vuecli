@@ -37,7 +37,7 @@ export default new VueRouter({
                 },
                 {
                     name: '卡片3', // 元件呈現的名稱
-                    path: 'child3', //對應虛擬路徑
+                    path: 'child/:id', //對應虛擬路徑
                     component: child3, //對應元件
                 },
             ]

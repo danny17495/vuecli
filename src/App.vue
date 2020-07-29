@@ -28,12 +28,11 @@ export default {
   components: {
     HelloWorld
   },
-  created() {
-    this.$http.get('https://randomuser.me/api/')
-    .then((response) => {
-      console.log(response.data)
-    });
-  }
+  // created() {
+  //   this.$http.get('https://randomuser.me/api/').then((response) => {
+  //     console.log(response.data)
+  //   });
+  // }
 }
 </script>
 

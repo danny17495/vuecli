@@ -14,6 +14,11 @@
   export default {
     data() {
       return {}
-    }
+    },
+  created() {
+    this.$http.get('https://randomuser.me/api/').then((response) => {
+      console.log(response)
+    });
   }
+}
 </script>
