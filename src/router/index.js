@@ -2,11 +2,13 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 //官方元件
 
-import Home from '@/components/HelloWorld'
-import Page from '@/components/pages/page'
-import child from '@/components/pages/child'
-import child2 from '@/components/pages/child2'
-import child3 from '@/components/pages/child3'
+import Home from '@/components/HelloWorld';
+import Page from '@/components/pages/page';
+import child from '@/components/pages/child';
+import child2 from '@/components/pages/child2';
+import child3 from '@/components/pages/child3';
+import Menu from '@/components/pages/menu';
+
 
 
 //自訂分頁元件
@@ -21,9 +23,13 @@ export default new VueRouter({
             component: Home, //對應元件
         },
         {
-            name: '分頁', // 元件呈現的名稱
+            // name: '分頁', // 元件呈現的名稱
             path: '/page', //對應虛擬路徑
-            component: Page, //對應元件
+            // component: Page, //對應元件
+            components: {
+               default: Page,
+               menu: Menu, 
+            },
             children: [
                 {
                     name: '卡片１', // 元件呈現的名稱
@@ -37,7 +43,7 @@ export default new VueRouter({
                 },
                 {
                     name: '卡片3', // 元件呈現的名稱
-                    path: 'child/:id', //對應虛擬路徑
+                    path: 'child3', //對應虛擬路徑
                     component: child3, //對應元件
                 },
             ]
